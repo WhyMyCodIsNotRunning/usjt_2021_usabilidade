@@ -1,6 +1,24 @@
 public class Empregado{
     private String nome;
     private int idade;
+    private double salario;
+    private int tipo;
+    private double comissao;
+    private double bonus;
+
+    public double calcSalario(){
+        switch (tipo){
+            case 1:
+                return salario;
+                
+            case 2:
+                return salario + salario * comissao;
+            case 3:
+                return salario + bonus;
+        }
+        return 0;
+    }
+
     public int getIdade(){
         return idade;
     }
