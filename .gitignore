@@ -1,0 +1,3 @@
+#todos os arquivos ignorados com .class
+*.class
+.env
